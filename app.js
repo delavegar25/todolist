@@ -10,7 +10,7 @@ saveButton.addEventListener('click', () => {
     saveButton.classList.add('Save');
 });
 removeButton.addEventListener('click', () => {
-    removeButton.classList.remove("remove");
+    removeButton.classList.remove('delete');
 });
 
 function saveBtn() {
