@@ -11,26 +11,27 @@
 
 body{
     display: block;
-    align-items: center;
     justify-content: center;
 }
 
 .container {
-   width: 300vh;
+   width: 200vh;
    height: 30vh;
-   align-items: center;
+   text-align: center;
    justify-content: center;
-   padding: 10px;
+   padding: 30px;
    background-color: #232323;
 }
 
 .container h1 {
     justify-content: center;
-    align-items: center;
+    text-align: center;
     color: var(--main-color);
 }
 
 input {
     padding: 5px;
-
+    width: 30vh;
+    border: none;
+    outline: none;      
 }
