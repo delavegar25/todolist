@@ -15,6 +15,7 @@ body{
 }
 
 .container {
+   display: inline-block;
    width: 200vh;
    height: 30vh;
    text-align: center;
@@ -56,8 +57,8 @@ body{
     border: none;
     outline: none;
 }
+
 .wrapper input[type="checkbox"]{
-    text-align: left;
     width: 20px;
     margin: 15px;
 }
