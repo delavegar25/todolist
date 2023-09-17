@@ -1,8 +1,14 @@
 const myTodo = document.getElementById('todo');
-const saveButton = document.getElementsByClassName('Save');
-const removeButton = document.getElementsByClassName('remove');
+const saveButton = document.querySelector('.Save');
+const removeButton = document.querySelector('.remove');
 
 // console.log(myTodo);
-// console.log(saveBtn);
-// console.log(removeBtn);
+// console.log(saveButton);
+// console.log(removeButton);
 
+saveButton.addEventListener('click', () => saveBtn());
+removeButton.addEventListener('click', () => removeBtn());
+
+function saveBtn() {
+
+}
