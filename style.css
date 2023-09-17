@@ -29,9 +29,52 @@ body{
     color: var(--main-color);
 }
 
-input {
+.container input {
     padding: 5px;
     width: 30vh;
     border: none;
     outline: none;      
+}
+
+.container button {
+   background-color: green;
+   cursor: pointer;
+   border: 2px solid var(--main-color);
+}
+
+.wrapper {
+    display: inline-block;
+    width: 210vh;
+    height: 20px;
+    padding: 40px;
+    border: 10px;
+    justify-content: center;
+}
+
+.wrapper input{
+    padding: 20px;
+    width: 25vh;
+    border: none;
+    outline: none;
+}
+.wrapper input[type="checkbox"]{
+    text-align: left;
+    width: 20px;
+    margin: 15px;
+}
+
+.wrapper label {
+    width: 30px;
+    text-transform: capitalize;
+    margin-left: 50px;
+}
+
+.wrapper button {
+    border: 2px solid #fff;
+    background-color: red;
+    cursor: pointer;
+    padding: 10px;
+    justify-content: right;
+    margin: 10px;
+    margin-left: 1150px;
 }
