@@ -6,8 +6,12 @@ const removeButton = document.querySelector('.remove');
 // console.log(saveButton);
 // console.log(removeButton);
 
-saveButton.addEventListener('click', () => saveBtn());
-removeButton.addEventListener('click', () => removeBtn());
+saveButton.addEventListener('click', () => {
+    saveButton.classList.add('Save');
+});
+removeButton.addEventListener('click', () => {
+    removeButton.classList.remove("remove");
+});
 
 function saveBtn() {
 

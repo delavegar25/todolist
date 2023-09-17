@@ -37,7 +37,7 @@ body{
     outline: none;      
 }
 
-.container button {
+.container .Save {
    background-color: green;
    cursor: pointer;
    border: 2px solid var(--main-color);
@@ -69,7 +69,7 @@ body{
     margin-left: 50px;
 }
 
-.wrapper button {
+.wrapper .remove {
     border: 2px solid #fff;
     background-color: red;
     cursor: pointer;
