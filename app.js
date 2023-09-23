@@ -1,27 +1,29 @@
+// legacy code
 const saveBtn = document.querySelector('.Save');
 const removeBtn = document.querySelector('.delete');
 
 removeBtn.addEventListener('click', (e) => {
-    if(e.target.className === 'delete'){
-        const div = e.target.parentElement;
-        li.parentNode.removeChild(div);
-    }
-});
+      e.target.classList.add('delete');
+      if(e.target.className === 'wrapper'){
+        wrapper.parentNode.removeChild(removeBtn);
+      }
+})
 
 saveBtn.addEventListener('submit', (e) => {
     e.preventDefault();
-    
-// create element
-const saveButton = document.createElement('div');
-const removeButton = document.createElement('div');
+})
 
-// add text content
-saveButton.textContent = 'add';
-removeButton.textContent = 'delete'
+function searchField() {
+    let input = document.getElementById('#todo');
+    input = input.toLowerCase();
+    let x = document.getElementByIdByClassName('wrapper');
 
-saveButton.classList.add('Save');
-removeButton.classList.add('delete');
-
-div.appendChild(saveButton);
-div.appendChild(removeButton);
-});
+    for(i = 0; i < x.length; i++){
+        if(!x[i].innerHTML.toLowerCase().includes(input)){
+            x[i].style.display="none";
+        }
+        else {
+            x[i].style.display="list-item";
+        }
+    }
+}
