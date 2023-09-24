@@ -14,7 +14,7 @@ saveBtn.addEventListener('submit', (e) => {
 })
 
 function searchField() {
-    let input = document.getElementById('#todo');
+    let input = document.getElementById('#todo').value;
     input = input.toLowerCase();
     let x = document.getElementByIdByClassName('wrapper');
 
