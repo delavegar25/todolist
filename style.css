@@ -70,7 +70,7 @@ body{
     margin-left: 50px;
 }
 
-.wrapper .delete {
+.wrapper #delete {
     border: 2px solid #fff;
     background-color: red;
     cursor: pointer;

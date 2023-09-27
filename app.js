@@ -1,13 +1,19 @@
 // legacy code
 const saveBtn = document.querySelector('.Save');
-const removeBtn = document.querySelector('.delete');
+//create element
+let removeBtn = document.createElement('button');
+removeBtn.textContent = 'delete';
+removeBtn.classList.add('delete')
+
 
 removeBtn.addEventListener('click', (e) => {
-      e.target.classList.add('delete');
-      if(e.target.className === 'wrapper'){
-        wrapper.parentNode.removeChild(removeBtn);
-      }
+    let elementToRemove = document.querySelector('#delete');
+    elementToRemove.remove();
 })
+
+let containerElement = document.querySelector('.wrapper');
+containerElement.appendChild(removeBtn);    
+
 
 saveBtn.addEventListener('submit', (e) => {
     e.preventDefault();
@@ -20,10 +26,10 @@ function searchField() {
 
     for(i = 0; i < x.length; i++){
         if(!x[i].innerHTML.toLowerCase().includes(input)){
-            x[i].style.display="none";
+            x[i].style.display === "none";
         }
         else {
-            x[i].style.display="list-item";
+            x[i].style.display === "list-item";
         }
     }
 }
